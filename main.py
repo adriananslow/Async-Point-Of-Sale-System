@@ -107,7 +107,6 @@ async def main():
             print(f"${item['price']} {item_label}")
             subtotal += item['price']
         subtotal = round(subtotal, 2)
-        another_order = False
         tax_rate = 0.05
         tax = round(subtotal * tax_rate, 2)
         total = round(subtotal + tax, 2)
